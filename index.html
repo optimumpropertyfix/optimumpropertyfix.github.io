@@ -1,60 +1,168 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Optimum Property Fix</title>
-  </head>
-  <body>
-    <div>
+<head>
+<style>
+
+body, html {
+    height: 100%;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("");
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #FF7F50;
+  color: black;
+}
+
+.team {
+  float: left;
+  display: block;
+  color: black;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;  
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  gap: 10px;
+}
+
+.team-a {
+  background-color: #eee;
+  padding: 5px;
+}
+
+.team-a > img {
+  border-radius: 100%;
+}
+
+.work {
+  background-color: #333;
+}
+.work-a {
+
+}
+</style>
+</head>
+
+<!--------------------------------------------------------------------------->
+<body>
+  <!--Header-->
+  <div class="header">
+    <div class="header-text">
+      <h1>Optimum Property Fix</h1>
       <p>CS 426: Senior Projects in Computer Science</p>
-    </div>
-    <div>
-      <p>Spring 2022</p>
-    </div>
-    <div>
       <p>University of Nevada, Reno</p>
+      <p>Team 05 - Spring 2022</p>  
+  </div>
+</div>
+
+     <!--Navigation-->
+    <div class="nav">
+      <a href="home"></i>Home</a>
+      <a href="team">Team</a>
+      <a href="features">Features</a>
+      <a href="contact">Contact Us</a>
+      <a href="login" style="float:right">Login</a>
     </div>
-    <div>
-      <p>CSE Department: Team Number 05</p>
+
+     <!--Team-->
+     <div class="team">
+       <h2>Team</h2>
+       <p>Meet Our Capstone Team:</p>
+       <div class="team-container">
+         
+        <div class="team-a">
+           <img src="https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
+           <h3>Araam Zaremehrjardi</h3>
+           <p>Student</p>
+        </div>
+         
+          <div class="team-a">
+            <img src="https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
+            <h3>Aisha Co</h3>
+            <p>Student</p>
+           </div>
+          
+           <div class="team-a">
+            <img src="https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
+            <h3>Nasrin Juana</h3>
+            <p>Student</p>
+           </div>
+           
+           <div class="team-a">
+            <img src="https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
+            <h3>Melissa Flores</h3>
+            <p>Student</p>
+           </div>
+           
+           <div class="team-a">
+            <img src="https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
+            <h3>Joanna Lopez</h3>
+            <p>Student</p>
+           </div>
+           
+           <div class="team-a">
+            <img src="https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
+            <h3>Erin Keith</h3>
+            <p>Advisor</p>
+           </div>
+           
+           <div class="team-a">
+            <img src="https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
+            <h3>Devrin Lee</h3>
+            <p>Instructor</p>
+           </div>
+           
+           <div class="team-a">
+            <img src="https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
+            <h3>David Feil-Seifer</h3>
+            <p>Instructor</p>
+           </div>
+        </div>
+      </div>
+
+    <!-- OPF-->
+    <div class="work">
+      <div class="work-a">
+        <h2>OPF</h2>
+        <p> Optimum Property Fix (OPF) aims to revamp the University of Nevada, Reno's current system through a new and improved maintenance request system, accessible to dormitory students as well as facilities and service members. 
+        OPF’s functionality fully eliminates the paper-based system and replaces it with a web application that retains all maintenance records in one place. The web application utilizes artificial intelligence and quality data through 
+        two different user-focused experiences. </p>
+      </div>
     </div>
-    <div>
-      <ul>
-        Team Members:
-        <li>Araam Zaremehrjardi</li>
-        <li>Aisha Co</li>
-        <li>Melissa Flores</li>
-        <li>Nasrin Juana</li>
-        <li>Joanna Lopez</li>
-      </ul>
-      <ul>
-        Instructors & External Advisors:
-        <li>
-          Erin Keith, Lecturer, Department: Computer Science and Engineering
-        </li>
-        <li>
-          Devrin Lee, Instructor, Department: Computer Science and Engineering
-        </li>
-        <li>Vihn Le, TA, Department: Computer Science and Engineering</li>
-      </ul>
-    </div>
-    <div>
-      <p>Project Description:</p>
-      <p>
-        The current dormitory maintenance requests system at the University of
-        Nevada, Reno (UNR) provides a system that is flawed and susceptible to
-        complications. Some issues the current system faces are paper trails,
-        leading to lost reports, a lack of maintenance request progress tracking
-        for the students, and does not incentivize students to submit issues
-        that occur within the property. With this, Optimum Property Fix (OPF)
-        aims to revamp UNR’s current system through a new and improved
-        maintenance request system, accessible to dormitory students as well as
-        facilities and service members. OPF’s functionality fully eliminates the
-        paper-based system and replaces it with a web application that retains
-        all maintenance records in one place. Major accomplishments that were
-        recently made for OPF are functional pages of the student side,
-        consisting of communication means, forms, and a sign-in page. The web
-        application utilizes artificial intelligence and quality data through
-        two different user-focused experiences.
-      </p>
-    </div>
-    <div></div>
+
   </body>
 </html>
