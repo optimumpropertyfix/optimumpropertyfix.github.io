@@ -1,168 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<style>
-
-body, html {
-    height: 100%;
-}
-
-.header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("");
-  height: 50%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.header-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.nav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.nav a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.nav a:hover {
-  background-color: #FF7F50;
-  color: black;
-}
-
-.team {
-  float: left;
-  display: block;
-  color: black;
-  background-color: white;
-  text-align: center;
-  text-decoration: none;  
-}
-
-.team-container {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
-  gap: 10px;
-}
-
-.team-a {
-  background-color: #eee;
-  padding: 5px;
-}
-
-.team-a > img {
-  border-radius: 100%;
-}
-
-.work {
-  background-color: #333;
-}
-.work-a {
-
-}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>OPF1</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/Features-Blue.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="assets/css/Mockup-iPhone-6S.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Team-Grid.css">
 </head>
 
-<!--------------------------------------------------------------------------->
 <body>
-  <!--Header-->
-  <div class="header">
-    <div class="header-text">
-      <h1>Optimum Property Fix</h1>
-      <p>CS 426: Senior Projects in Computer Science</p>
-      <p>University of Nevada, Reno</p>
-      <p>Team 05 - Spring 2022</p>  
-  </div>
-</div>
-
-     <!--Navigation-->
-    <div class="nav">
-      <a href="home"></i>Home</a>
-      <a href="team">Team</a>
-      <a href="features">Features</a>
-      <a href="contact">Contact Us</a>
-      <a href="login" style="float:right">Login</a>
-    </div>
-
-     <!--Team-->
-     <div class="team">
-       <h2>Team</h2>
-       <p>Meet Our Capstone Team:</p>
-       <div class="team-container">
-         
-        <div class="team-a">
-           <img src="https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
-           <h3>Araam Zaremehrjardi</h3>
-           <p>Student</p>
+    <header class="header-blue">
+        <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+            <div class="container-fluid"><a class="navbar-brand" href="#"><img src = "assets/img/opfElement.png"> Optimum Property Fix</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"></li>
+                        <li class="nav-item"><a class="nav-link" href="#Audience">Audience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Team">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container hero">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+                    <h1>The revolution is <strong>here.</strong></h1>
+                    <p>Optimum Property Fix (OPF) aims to revamp the University of Nevada, Reno current system through a new and improved maintenance request system, accessible to dormitory students, facilities and service members, and administrators.</p>
+                </div>
+                <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
+                    <div class="iphone-mockup">
+                        <div class="screen"></div>
+                    </div>
+                    <div class="iphone-mockup"><img class="device" src="assets/img/iphone.svg">
+                        <div class="screen"></div>
+                    </div>
+                    <div class="phone-mockup"></div>
+                </div>
+            </div>
+        </div><section class="article-list">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center" id="Audience">Audience</h2>
         </div>
-         
-          <div class="team-a">
-            <img src="https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
-            <h3>Aisha Co</h3>
-            <p>Student</p>
-           </div>
-          
-           <div class="team-a">
-            <img src="https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
-            <h3>Nasrin Juana</h3>
-            <p>Student</p>
-           </div>
-           
-           <div class="team-a">
-            <img src="https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
-            <h3>Melissa Flores</h3>
-            <p>Student</p>
-           </div>
-           
-           <div class="team-a">
-            <img src="https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
-            <h3>Joanna Lopez</h3>
-            <p>Student</p>
-           </div>
-           
-           <div class="team-a">
-            <img src="https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
-            <h3>Erin Keith</h3>
-            <p>Advisor</p>
-           </div>
-           
-           <div class="team-a">
-            <img src="https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
-            <h3>Devrin Lee</h3>
-            <p>Instructor</p>
-           </div>
-           
-           <div class="team-a">
-            <img src="https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
-            <h3>David Feil-Seifer</h3>
-            <p>Instructor</p>
-           </div>
+        <div class="row articles">
+            <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/Students.jpg" /></a>
+                <h3 class="name">Students</h3>
+                <p class="description">OPF is available all dormitory students to create maintenance requests, submit feedback, and immediate assistance through OPF&#39;s application. </p><a class="action" href="#"></a>
+            </div>
+            <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/FaciltiesMaintenance.jpg" /></a>
+                <h3 class="name">Facilities and Services</h3>
+                <p class="description">OPF can facilitate communication through the facilities and services devices including scheduling of repairs and management of maintenance requests.</p>
+            </div>
+            <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/UNR.jpg" /></a>
+                <h3 class="name">Administrators</h3>
+                <p class="description">OPF is available to administrators to view analytics, building health reports, and budget for costly upgrades. </p>
+            </div>
         </div>
-      </div>
-
-    <!-- OPF-->
-    <div class="work">
-      <div class="work-a">
-        <h2>Features</h2>
-        <p> Optimum Property Fix (OPF) aims to revamp the University of Nevada, Reno's current system through a new and improved maintenance request system, accessible to dormitory students as well as facilities and service members. 
-        OPF’s functionality fully eliminates the paper-based system and replaces it with a web application that retains all maintenance records in one place. The web application utilizes artificial intelligence and quality data through 
-        two different user-focused experiences. </p>
-      </div>
     </div>
+</section><section class="features-blue">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center" id="Features">Features</h2>
+        </div>
+        <div class="row features">
+            <div class="col-sm-6 col-md-4 item"><i class="fa fa-mobile icon" style="color: var(--bs-white);"></i>
+                <h3 class="name">Mobile</h3>
+                <p class="description">OPF can manage, measure, and <em>optimize</em> maintenance requests on any device. </p>
+            </div>
+            <div class="col-sm-6 col-md-4 item"><i class="fa fa-wechat icon" style="color: var(--bs-white);"></i>
+                <h3 class="name">Chatbot</h3>
+                <p class="description">OPF includes a chatbot to help answer <em>immediate</em> questions. </p>
+            </div>
+            <div class="col-sm-6 col-md-4 item"><i class="fa fa-home icon" style="color: var(--bs-white);"></i>
+                <h3 class="name">Customizable</h3>
+                <p class="description">OPF includes a <em>customizable </em>dashboard to rearrange items. </p>
+            </div>
+            <div class="col-sm-6 col-md-4 item"><i class="fa fa-leaf icon" style="color: var(--bs-white);"></i>
+                <h3 class="name">Environmental</h3>
+                <p class="description">OPF reduces UNR&#39;s <em>environmental</em> footprint reducing paper requests. </p>
+            </div>
+            <div class="col-sm-6 col-md-4 item"><i class="fa fa-files-o icon" style="color: var(--bs-white);"></i>
+                <h3 class="name">Centralized System</h3>
+                <p class="description">OPF brings together housing forms providing a more <em>manageable</em> system. </p>
+            </div>
+            <div class="col-sm-6 col-md-4 item"><i class="fa fa-star-half-o icon" style="color: var(--bs-white);"></i>
+                <h3 class="name">Feedback</h3>
+                <p class="description">OPF gives immediate <em>assessment</em> on completed work and maintenance request. </p>
+            </div>
+        </div>
+    </div>
+</section><section class="team-grid">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center" id="Team">Team </h2>
+        </div>
+        <div class="row people">
+            <div class="col-md-4 col-lg-3 item">
+                <div class="box" style="background-image: url(assets/img/AZ.png);">
+                    <div class="cover">
+                        <h3 class="name">Araam Zaremehrjardi</h3>
+                        <p class="title">Student</p>
+                        <div class="social"><a href="https://github.com/araamz"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/araam-zaremehrjardi-50642319a"><i class="fa fa-linkedin-square"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 item">
+                <div class="box" style="background-image: url(assets/img/NJ.png);">
+                    <div class="cover">
+                        <h3 class="name">Nasrin Juana</h3>
+                        <p class="title">Student</p>
+                        <div class="social"><a href="https://github.com/njuana"><i class="fa fa-github"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 item">
+                <div class="box" style="background-image: url(assets/img/AC.png);">
+                    <div class="cover">
+                        <h3 class="name">Aisha Co</h3>
+                        <p class="title">Student</p>
+                        <div class="social"><a href="https://github.com/Zelrene"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/aisha-ysabel-co-393614156"><i class="fa fa-linkedin-square"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 item">
+                <div class="box" style="background-image: url(assets/img/MF.png);">
+                    <div class="cover">
+                        <h3 class="name">Melissa Flores</h3>
+                        <p class="title">Student</p>
+                        <div class="social"><a href="https://github.com/melissaflores417"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/melissa-flores-6b952114b"><i class="fa fa-linkedin-square"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row people">
+            <div class="col-md-4 col-lg-3 item">
+                <div class="box" style="background-image: url(assets/img/JL.png);" jl>
+                    <div class="cover">
+                        <h3 class="name">Joanna Lopez</h3>
+                        <p class="title">Student</p>
+                        <div class="social"><a href="https://github.com/joannalopez223"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/joannaclopez"><i class="fa fa-linkedin-square"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 item">
+                <div class="box" style="background-image: url(assets/img/EK.png);">
+                    <div class="cover">
+                        <h3 class="name">Erin Keith</h3>
+                        <p class="title">Advisor</p>
+                        <div class="social"><a href="https://www.linkedin.com/in/erinkeith"><i class="fa fa-linkedin-square"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 item">
+                <div class="box" style="background-image: url(assets/img/DL.jpg);">
+                    <div class="cover">
+                        <h3 class="name">Devrin Lee</h3>
+                        <p class="title">Instructor</p>
+                        <div class="social"><a href="https://www.linkedin.com/in/devrinlee"><i class="fa fa-linkedin-square"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 item">
+                <div class="box" style="background-image: url(assets/img/VL.png);">
+                    <div class="cover">
+                        <h3 class="name">Vinh Lee</h3>
+                        <p class="title">Teaching Assistant/ Mentor</p>
+                        <div class="social"><a href="https://www.linkedin.com/in/vdacle"><i class="fa fa-linkedin-square"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><footer class="footer-clean">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 item">
+                <h3 class="text-center" id="About">About</h3>
+                <ul>
+                    <li class="text-center"><a href="https://www.unr.edu/">University of Nevada, Reno</a></li>
+                    <li class="text-center"><a href="https://www.unr.edu/cse">CSE Department</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+                <h3 class="text-center">Senior Capstone</h3>
+                <ul>
+                    <li class="text-center"><a href="https://www.unr.edu/engineering/student-resources/innovation-day/2021/computer-science-and-engineering">Innovation Day</a></li>
+                    <li></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    </header>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
 
-  </body>
 </html>
